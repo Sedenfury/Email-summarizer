@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Mail summarizer",
+  "version": "1.0",
+  "description": "Reads last 5 unread Gmail messages, summarizes them using Hugging Face AI, and highlights important dates.",
+  "permissions": [
+    "identity",
+    "storage",
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.googleapis.com/*",
+    "https://api-inference.huggingface.co/*"
+  ],
+  "oauth2": {
+    "client_id": "930691050599-k9pohufh5e2jcvsq8sa17kl01ujekdgf.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/gmail.modify"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "options_page": "options.html"
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Mail summarizer - Options</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: Arial, sans-serif; padding: 12px; max-width: 800px; }
+      input { padding:6px; font-size: 1em; }
+      button { padding:6px 10px; margin-right:6px; }
+    </style>
+  </head>
+  <body>
+    <h3>Options</h3>
+    <p>Enter your Hugging Face API key and preferred model.</p>
+<div>
+  <label>Hugging Face API key:</label><br>
+  <input id="hf" style="width:100%" placeholder="hf_xxxxxxxxxxxxxxxx" />
+</div>
+<div style="margin-top:8px;">
+  <label>Hugging Face model:</label><br>
+  <input id="model" style="width:100%" value="facebook/bart-large-cnn" />
+</div>
+    <div style="margin-top:8px;">
+      <button id="save">Save</button>
+      <button id="clear">Clear</button>
+    </div>
+    <div id="msg" style="margin-top:8px;color:green"></div>
+    <hr/>
+    <p>Example screenshots (placeholders):</p>
+    <img src="gcloud_step1.png" style="width:100%;max-width:700px;border:1px solid #ddd"/><br/><br/>
+    <img src="gcloud_step2.png" style="width:100%;max-width:700px;border:1px solid #ddd"/><br/><br/>
+    <script src="options.js"></script>
+  </body>
+</html>
