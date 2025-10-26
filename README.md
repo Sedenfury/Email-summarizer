@@ -16,7 +16,7 @@ THIS CODE IS RUNNING PERFECTLY FINE IN OUR PC's SO IF THERE ARE ANY PROBLEMS DUR
 7.) Now copy the generated client id and paste it inside curly braces in line no. 17 manifest.json in client id .
        (Example: 930691050599-k9pohufh5e2jcvsq8sa17kl01ujekdgf.apps.googleusercontent.com)
 
-8.) now reload the extension and run it , go to options and in Hugging Face API paste this key:  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 
+8.) now reload the extension and run it , go to options and in Hugging Face API paste this key:  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 
      And now save it.
 
 9.) reload the extension and done.
